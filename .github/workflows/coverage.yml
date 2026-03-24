@@ -44,7 +44,7 @@ jobs:
         run: npm run coverage
 
       - name: Codecov
-        if: ${{ (success() || failure()) && github.event_name != 'pull_request' && env.CODECOV_TOKEN != '' && matrix.node == 22 }}
+        if: ${{ (success() || failure()) && github.event_name != 'pull_request' && env.CODECOV_TOKEN != '' && matrix.node == 24 }}
         run: |
           curl -Os https://uploader.codecov.io/latest/linux/codecov
           chmod +x codecov
