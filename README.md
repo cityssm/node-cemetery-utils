@@ -1,6 +1,6 @@
 # Cemetery Utilities for Node
 
-**Utilities for cemetery systems (and probably other systems too!)**
+Utilities for cemetery systems (and probably other systems too!)
 
 ## Installation
 
