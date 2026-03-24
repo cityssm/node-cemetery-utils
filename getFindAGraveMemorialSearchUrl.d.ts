@@ -7,7 +7,7 @@
  * @param additionalFilters.deathYear The death year of the deceased, which can be used to narrow down search results.
  * @returns The URL for the Find A Grave memorial search, or undefined if the cemetery ID is null.
  */
-export declare function getFindAGraveMemorialSearchUrl(findAGraveCemeteryId: number | null, deceasedName: {
+export default function getFindAGraveMemorialSearchUrl(findAGraveCemeteryId: number | null, deceasedName: {
     first?: string;
     last?: string;
 } | string, additionalFilters?: {
