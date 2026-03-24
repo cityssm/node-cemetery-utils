@@ -33,7 +33,7 @@ parseFullName(fullName, { doFirstNameCheck: true })
 - Thanks [parse-full-name](https://www.npmjs.com/package/parse-full-name)
   for the main parsing function!
 
-## Name a Grave Utilities
+## Find a Grave Utilities
 
 See [Find a Grave](https://www.findagrave.com/),
 a large database of cemetery and memorial records.
