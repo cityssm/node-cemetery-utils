@@ -1,4 +1,3 @@
-/* eslint-disable @cspell/spellchecker */
 import parseFullName from './parseFullName.js';
 /**
  * Generates a Find A Grave memorial search URL based on the provided cemetery ID, deceased name, and optional filters.

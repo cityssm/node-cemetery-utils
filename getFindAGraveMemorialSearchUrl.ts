@@ -1,5 +1,3 @@
-/* eslint-disable @cspell/spellchecker */
-
 import parseFullName from './parseFullName.js'
 
 /**

@@ -1,7 +1,7 @@
 import assert from 'node:assert'
 import { describe, it } from 'node:test'
 
-import getFindAGraveMemorialSearchUrl from '../getFindAGraveMemorialSearchUrl.js'
+import { getFindAGraveMemorialSearchUrl } from '../index.js'
 
 // eslint-disable-next-line no-secrets/no-secrets
 await describe('getFindAGraveMemorialSearchUrl', async () => {
