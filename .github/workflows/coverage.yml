@@ -1,0 +1,51 @@
+name: Coverage Testing
+
+on:
+  push:
+  pull_request:
+    types: [opened, reopened]
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  Ubuntu-Coverage:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [24]
+    env:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+    name: Ubuntu - Node ${{ matrix.node }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+
+      - name: Install Global Dependencies
+        run: npm install -g c8
+
+      - name: Install Application (CI)
+        id: installCi
+        continue-on-error: true
+        run: npm ci
+
+      - name: Install Application (Install)
+        if: steps.installCi.outcome == 'failure'
+        run: npm install
+
+      - name: Run Coverage Testing
+        run: npm run coverage
+
+      - name: Codecov
+        if: ${{ (success() || failure()) && github.event_name != 'pull_request' && env.CODECOV_TOKEN != '' && matrix.node == 22 }}
+        run: |
+          curl -Os https://uploader.codecov.io/latest/linux/codecov
+          chmod +x codecov
+          ./codecov -t ${CODECOV_TOKEN}
