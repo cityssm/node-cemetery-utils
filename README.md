@@ -1,5 +1,8 @@
 # Cemetery Utilities for Node
 
+[![DeepSource](https://app.deepsource.com/gh/cityssm/node-cemetery-utils.svg/?label=active+issues&show_trend=true&token=MX1MmigepU4Az2vse6NCwdhF)](https://app.deepsource.com/gh/cityssm/node-cemetery-utils/)
+[![codecov](https://codecov.io/gh/cityssm/node-cemetery-utils/graph/badge.svg?token=JWVT9ZWGXL)](https://codecov.io/gh/cityssm/node-cemetery-utils)
+
 Utilities for cemetery systems (and probably other systems too!)
 
 ## Installation
