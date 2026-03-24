@@ -1,0 +1,61 @@
+{
+  "name": "@cityssm/cemetery-utils",
+  "version": "0.1.0",
+  "description": "Utilities for cemetery systems (and probably other systems too!)",
+  "keywords": [
+    "cemetery",
+    "find-a-grave",
+    "proper-name",
+    "name-parsing"
+  ],
+  "homepage": "https://github.com/cityssm/node-cemetery-utils#readme",
+  "bugs": {
+    "url": "https://github.com/cityssm/node-cemetery-utils/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/node-cemetery-utils.git"
+  },
+  "license": "MIT",
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./getFindAGraveCemeteryUrl": "./getFindAGraveCemeteryUrl.js",
+    "./getFindAGraveMemorialSearchUrl": "./getFindAGraveMemorialSearchUrl.js",
+    "./getFindAGraveMemorialUrl": "./getFindAGraveMemorialUrl.js",
+    "./isFirstName": "./isFirstName/index.js",
+    "./parseFullName": "./parseFullName.js"
+  },
+  "files": [
+    "index.*",
+    "getFindAGraveCemeteryUrl.*",
+    "getFindAGraveMemorialSearchUrl.*",
+    "getFindAGraveMemorialUrl.*",
+    "isFirstName/**/*",
+    "parseFullName.*"
+  ],
+  "scripts": {
+    "build:isFirstName": "node ./build/isFirstName.js",
+    "coverage": "c8 --reporter=lcov --reporter=text --reporter=text-summary node --test \"./test/*.test.js\"",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint:eslint:md": "eslint **/*.md",
+    "lint:eslint:ts": "eslint --ignore-pattern \"**/*.d.ts\" --ignore-pattern \"test/**\" --no-warn-ignored **/*.ts **/**/*.ts",
+    "lint:markdown": "markdownlint-cli2 --config .markdownlint.json \"**/*.md\" \"#node_modules\" \"#.github\"",
+    "test": "node --test \"./test/*.test.js\""
+  },
+  "dependencies": {
+    "@types/parse-full-name": "^1.2.5",
+    "parse-full-name": "^1.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "editorconfig-checker": "^6.1.1",
+    "eslint-config-cityssm": "^38.5.0",
+    "human-names": "^1.0.12",
+    "markdownlint-cli2": "^0.22.0",
+    "prettier-config-cityssm": "^2.1.1",
+    "wikidata-person-names": "^1.3.0"
+  }
+}
