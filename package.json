@@ -52,7 +52,7 @@
   "devDependencies": {
     "@types/node": "^25.5.0",
     "editorconfig-checker": "^6.1.1",
-    "eslint-config-cityssm": "^38.5.0",
+    "eslint-config-cityssm": "^39.0.0",
     "human-names": "^1.0.12",
     "markdownlint-cli2": "^0.22.0",
     "prettier-config-cityssm": "^2.1.1",
