@@ -1,4 +1,9 @@
 export default [
+  'Partner',
+  'Spouse',
+  'Husband',
+  'Wife',
+
   'Sibling',
   'Brother',
   'Sister',
