@@ -35,6 +35,9 @@ parseFullName(fullName, { doFirstNameCheck: true })
 
 ## Relationship List
 
+A simple list of relationships someone making arrangements may have to
+someone deceased.
+
 ```javascript
 console.log(relationships)
 
