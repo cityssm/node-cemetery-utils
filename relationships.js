@@ -1,4 +1,5 @@
 export default [
+    'Self',
     'Partner',
     'Spouse',
     'Husband',
