@@ -6,6 +6,7 @@
 
     "incremental": true,
     "tsBuildInfoFile": ".tsbuildinfo",
+    "types": ["node"],
 
     "isolatedModules": true,
 

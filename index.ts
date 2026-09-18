@@ -17,3 +17,5 @@ export {
   default as parseFullName,
   ParseFullNameDefaultOptions
 } from './parseFullName.js'
+
+export { default as relationships } from './relationships.js'

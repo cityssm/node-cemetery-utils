@@ -10,8 +10,8 @@ export interface ParseFullNameOptions {
 export declare const ParseFullNameDefaultOptions: Readonly<ParseFullNameOptions>;
 /**
  * Parses a full name into its components.
- * @param name The full name to parse.
- * @param options Optional settings for parsing.
+ * @param name - The full name to parse.
+ * @param options - Optional settings for parsing.
  * @returns The parsed name components.
  */
 export default function parseFullName(name: string, options?: Partial<ParseFullNameOptions>): ReturnType<typeof _parseFullName>;

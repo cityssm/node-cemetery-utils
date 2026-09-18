@@ -1,0 +1,28 @@
+export default [
+  'Sibling',
+  'Brother',
+  'Sister',
+
+  'Parent',
+  'Father',
+  'Mother',
+
+  'Son',
+  'Daughter',
+
+  'Grandparent',
+  'Grandfather',
+  'Grandmother',
+
+  'Grandchild',
+  'Grandson',
+  'Granddaughter',
+
+  'Uncle',
+  'Aunt',
+  'Nephew',
+  'Niece',
+
+  'Cousin',
+  'Friend'
+]

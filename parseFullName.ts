@@ -18,8 +18,8 @@ export const ParseFullNameDefaultOptions: Readonly<ParseFullNameOptions> =
 
 /**
  * Parses a full name into its components.
- * @param name The full name to parse.
- * @param options Optional settings for parsing.
+ * @param name - The full name to parse.
+ * @param options - Optional settings for parsing.
  * @returns The parsed name components.
  */
 export default function parseFullName(
@@ -42,12 +42,12 @@ export default function parseFullName(
     ) {
       if (middleName === '') {
         parsedName.first = lastName
-        parsedName.last = firstName
       } else {
         parsedName.first = middleName
         parsedName.middle = lastName
-        parsedName.last = firstName
       }
+
+      parsedName.last = firstName
     }
   }
 
