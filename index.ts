@@ -18,4 +18,9 @@ export {
   ParseFullNameDefaultOptions
 } from './parseFullName.js'
 
-export { default as relationships } from './relationships.js'
+export {
+  femaleRelationships,
+  maleRelationships,
+  neutralRelationships,
+  default as relationships
+} from './relationships.js'
