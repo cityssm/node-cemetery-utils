@@ -42,8 +42,8 @@
     "build:isFirstName": "node ./build/isFirstName.js",
     "coverage": "c8 --reporter=lcov --reporter=text --reporter=text-summary node --test \"./test/*.test.js\"",
     "lint:editorconfig": "editorconfig-checker",
-    "lint:eslint:md": "eslint **/*.md",
-    "lint:eslint:ts": "eslint --ignore-pattern \"**/*.d.ts\" --ignore-pattern \"test/**\" --no-warn-ignored **/*.ts **/**/*.ts",
+    "lint:eslint:md": "eslint --config eslint.config.js **/*.md",
+    "lint:eslint:ts": "eslint --config eslint.config.js --ignore-pattern \"**/*.d.ts\" --ignore-pattern \"test/**\" --no-warn-ignored **/*.ts **/**/*.ts",
     "lint:markdown": "markdownlint-cli2 --config .markdownlint.json \"**/*.md\" \"#node_modules\" \"#.github\"",
     "test": "node --test \"./test/*.test.js\""
   },
