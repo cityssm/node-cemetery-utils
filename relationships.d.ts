@@ -1,7 +1,7 @@
 export declare const genderedRelationships: Array<Partial<{
-    neutral: string;
-    male: string;
     female: string;
+    male: string;
+    neutral: string;
 }>>;
 export declare const maleRelationships: string[];
 export declare const femaleRelationships: string[];

@@ -1,67 +1,67 @@
 export const genderedRelationships: Array<
   Partial<{
-    neutral: string
-    male: string
     female: string
+    male: string
+    neutral: string
   }>
 > = [
   {
-    neutral: 'Self',
+    female: 'Self',
     male: 'Self',
-    female: 'Self'
+    neutral: 'Self'
   },
   {
-    neutral: 'Partner',
+    female: 'Girlfriend',
     male: 'Boyfriend',
-    female: 'Girlfriend'
+    neutral: 'Partner'
   },
   {
-    neutral: 'Spouse',
+    female: 'Wife',
     male: 'Husband',
-    female: 'Wife'
+    neutral: 'Spouse'
   },
   {
-    neutral: 'Sibling',
+    female: 'Sister',
     male: 'Brother',
-    female: 'Sister'
+    neutral: 'Sibling'
   },
   {
-    neutral: 'Parent',
+    female: 'Mother',
     male: 'Father',
-    female: 'Mother'
+    neutral: 'Parent'
   },
   {
-    neutral: 'Child',
+    female: 'Daughter',
     male: 'Son',
-    female: 'Daughter'
+    neutral: 'Child'
   },
   {
-    neutral: 'Grandparent',
+    female: 'Grandmother',
     male: 'Grandfather',
-    female: 'Grandmother'
+    neutral: 'Grandparent'
   },
   {
-    neutral: 'Grandchild',
+    female: 'Granddaughter',
     male: 'Grandson',
-    female: 'Granddaughter'
+    neutral: 'Grandchild'
   },
   {
-    male: 'Uncle',
-    female: 'Aunt'
+    female: 'Aunt',
+    male: 'Uncle'
   },
   {
-    male: 'Nephew',
-    female: 'Niece'
+    female: 'Niece',
+    male: 'Nephew'
   },
   {
-    neutral: 'Cousin',
+    female: 'Cousin',
     male: 'Cousin',
-    female: 'Cousin'
+    neutral: 'Cousin'
   },
   {
-    neutral: 'Friend',
+    female: 'Friend',
     male: 'Friend',
-    female: 'Friend'
+    neutral: 'Friend'
   }
 ]
 
